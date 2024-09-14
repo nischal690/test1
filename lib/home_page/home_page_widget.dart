@@ -253,8 +253,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                       defaultLocation: const LatLng(0.0, 0.0));
                   var shouldSetState = false;
                   _model.apiResult1w0Copy42 = await LocationCall.call(
-                    lattitude: 20.0,
-                    longitude: 70.0,
+                    lattitude:
+                        functions.fetchlatitute(currentUserLocationValue!),
+                    longitude:
+                        functions.fetchlongitude(currentUserLocationValue!),
                   );
 
                   shouldSetState = true;

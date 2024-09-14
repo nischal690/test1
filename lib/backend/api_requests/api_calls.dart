@@ -21,7 +21,7 @@ class LocationCall {
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'location',
-      apiUrl: 'http://api.taar.in//internal/user',
+      apiUrl: 'http://api.taar.in/internal/user',
       callType: ApiCallType.PATCH,
       headers: {
         'Authorization': '65e5de46-f3f5-41d3-9649-cf0448ad201f',
